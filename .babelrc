@@ -1,0 +1,14 @@
+{
+  "presets": ["es2015"],
+  "compact": true,
+  "plugins": [
+    "babel-plugin-inline-import",
+    "transform-async-to-generator",
+    "transform-regenerator",
+    "transform-object-rest-spread",
+    "syntax-async-functions",
+    ["babel-plugin-transform-builtin-extend", {
+      globals: ["Error"]
+    }]
+  ]
+}

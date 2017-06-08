@@ -15,4 +15,7 @@ app.use('/graphiql', graphiqlExpress({
   endpointURL: '/graphql',
 }));
 
+console.log(`Access the endpoint at http://localhost:${PORT}/graphql`);
+console.log(`Access Graphiql at http://localhost:${PORT}/graphiql`);
+
 app.listen(PORT);

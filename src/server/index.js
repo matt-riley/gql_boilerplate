@@ -1,9 +1,9 @@
 import bodyParser from 'body-parser';
 import express from 'express';
-import { graphqlExpress, graphiqlExpress } from 'graphql-server-express';
+import { graphqlExpress, graphiqlExpress } from 'apollo-server-express';
 import Schema from '../schema';
 
-const PORT = 3000;
+const PORT = 5000;
 
 const app = express();
 

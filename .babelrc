@@ -2,7 +2,10 @@
   "presets": ["es2015"],
   "compact": true,
   "plugins": [
-    "babel-plugin-inline-import",
+    ["transform-import-to-read-file-sync", {
+      test: "\\.graphql$",
+      options: "utf8"
+    }],
     "transform-async-to-generator",
     "transform-regenerator",
     "transform-object-rest-spread",

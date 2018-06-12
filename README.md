@@ -1,5 +1,7 @@
 # GraphQL Boilerplate
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/matt-riley/gql_boilerplate.svg)](https://greenkeeper.io/)
+
 The purpose of this repo is to provide myself with a simple boilerplate for setting up a GraphQL service.
 
 It's 'fully featured' in so much as the correct Babel plugins, directory structure and very, very basic setup is complete.

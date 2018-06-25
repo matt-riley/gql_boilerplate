@@ -1,5 +1,5 @@
 {
-  "presets": ["es2015"],
+  "presets": ["env"],
   "compact": true,
   "plugins": [
     ["transform-import-to-read-file-sync", {
@@ -16,7 +16,7 @@
   ],
   "env": {
     "production": {
-      "presets": ["babili"]
+      "presets": ["minify"]
     }
   }
 }

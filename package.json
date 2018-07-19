@@ -11,7 +11,7 @@
     "update-schema": "NODE_ENV=local babel-node ./scripts/build_schema.js"
   },
   "dependencies": {
-    "apollo-server-express": "1.3.6",
+    "apollo-server-express": "2.0.0",
     "babel-plugin-transform-builtin-extend": "1.1.2",
     "body-parser": "1.17.2",
     "express": "4.15.3",

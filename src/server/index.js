@@ -1,21 +1,17 @@
-import bodyParser from 'body-parser';
 import express from 'express';
-import { graphqlExpress, graphiqlExpress } from 'apollo-server-express';
-import Schema from '../schema';
+import { ApolloServer } from 'apollo-server-express';
+import executableSchema from '../schema';
+import resolvers from '../resolvers';
 
 const PORT = 5000;
 
 const app = express();
 
-app.use('/graphql', bodyParser.json(), graphqlExpress({
-  schema: Schema,
-}));
+const server = new ApolloServer({
+  schema: executableSchema
+});
+server.applyMiddleware({ app, path: '/' });
 
-app.use('/graphiql', graphiqlExpress({
-  endpointURL: '/graphql',
-}));
-
-console.log(`Access the endpoint at http://localhost:${PORT}/graphql`);
-console.log(`Access Graphiql at http://localhost:${PORT}/graphiql`);
-
-app.listen(PORT);
+app.listen({ port: PORT }, () => 
+  console.log(`🚀 Server ready at http://localhost:${PORT}${server.graphqlPath}`)
+);

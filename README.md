@@ -42,7 +42,7 @@ or
 npm start
 ```
 
-This will start the server locally and GraphiQL will be available at [http://localhost:5000/graphiql](http://localhost:5000/graphiql)
+This will start the server locally and GraphQL Playground will be available at [http://localhost:5000](http://localhost:5000)
 
 The only query possible with this boilerplate is:
 ```
@@ -55,7 +55,7 @@ The response should be:
 ```json
 {
   "data": {
-    "me": "Hello World"
+    "me": "foobar"
   }
 }
 ```

@@ -1,0 +1,15 @@
+type Query {
+  # Fortunes are a key component to a fortune cookie. Fortunes contain a message, often a proverb the reader can easily relate to his or her own experiences, giving the illusion of a mysterious connection between self and cookie.
+  # Args: `limit`, `skip`, `page` - can be used together, `id` to be used on its own.
+  fortunes(
+    # limit: Integer (optional) = Quantity of fortunes to return, default 100, max 1000
+    limit: Int, 
+    # skip: Integer (optional) = Fortunes to skip before fetching, default 0
+    skip: Int, 
+    # page: Integer (optional) = Page number taking into account given limit, default 1
+    page: Int, 
+    # id: String (optional) = id of the Fortune to perform action with. Has example value.
+    id: String): String
+  lessons(limit: Int, skip: Int, page: Int, id: String): String
+  lottos(limit: Int, skip: Int, page: Int, id: String): String
+}

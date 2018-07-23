@@ -13,10 +13,6 @@ const server = new ApolloServer({
   typeDefs: schema,
   resolvers,
   dataSources,
-  formatError: error => {
-    console.log(JSON.stringify(error, null, 2));
-    return new Error('An error')
-  },
 });
 
 server.applyMiddleware({ app, path: '/' });

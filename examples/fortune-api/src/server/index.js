@@ -1,9 +1,9 @@
 import express from 'express';
 import { ApolloServer } from 'apollo-server-express';
 
+import dataSources from '../connectors';
 import schema from '../schema';
 import resolvers from '../resolvers';
-import mocks from '../../test/mocks';
 
 const PORT = 5000;
 
@@ -12,7 +12,11 @@ const app = express();
 const server = new ApolloServer({
   typeDefs: schema,
   resolvers,
-  mocks,
+  dataSources,
+  formatError: error => {
+    console.log(JSON.stringify(error, null, 2));
+    return new Error('An error')
+  },
 });
 
 server.applyMiddleware({ app, path: '/' });

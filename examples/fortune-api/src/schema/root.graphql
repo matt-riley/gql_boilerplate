@@ -1,0 +1,43 @@
+type Query {
+  """
+  Returns a list of `fortune`s.
+  Args: `limit`, `skip`, `page` - can be used together, `id` to be used on its own.
+  """
+  fortunes(
+    "limit: Integer (optional) = Quantity of fortunes to return, default 100, max 1000"
+    limit: Int, 
+    "skip: Integer (optional) = Fortunes to skip before fetching, default 0"
+    skip: Int, 
+    "page: Integer (optional) = Page number taking into account given limit, default 1"
+    page: Int, 
+    "id: String (optional) = id of the Fortune to perform action with. Will return a single entry in the array."
+    id: ID): [Fortune]
+
+  """
+  A lesson in simplified Chinese. Gives the user a common word or phrase in English, the Chinese alphabet, and a pronunciation. After a gluttonous meal, there’s no better thank you than butchering the language of the restaurant staff while crunching down two or three cookies.
+  Args: `limit`, `skip`, `page` - can be used together, `id` to be used on its own.
+  """
+  lessons(
+    "limit: Integer (optional) = Quantity of lessons to return, default 100, max 1000"
+    limit: Int, 
+    "skip: Integer (optional) = Lessons to skip before fetching, default 0"
+    skip: Int, 
+    "page: Integer (optional) = Page number taking into account given limit, default 1"
+    page: Int, 
+    "id: String (optional) = id of the Lesson to perform action with. Will return a single entry in the array."
+    id: ID): [Lesson]
+
+  """
+  Lotto numbers are 6 numbers ranging from 0 to 59, coninciding with US Powerball numbers. No one has ever won the Powerball using the numbers from a fortune cookie, but fortune-makers still need something to fill in the extra white-space.
+  Args: `limit`, `skip`, `page` - can be used together, `id` to be used on its own.
+  """
+  lottos(
+    "limit: Integer (optional) = Quantity of lotto numbers to return, default 100, max 1000"
+    limit: Int, 
+    "skip: Integer (optional) = Lessons to skip before fetching, default 0"
+    skip: Int, 
+    "page: Integer (optional) = Page number taking into account given limit, default 1"
+    page: Int, 
+    "id: String (optional) = id of the Lotto numbers to perform action with. Will return a single entry in the array."
+    id: ID): [Lotto]
+}

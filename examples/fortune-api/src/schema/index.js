@@ -1,32 +1,16 @@
-import { makeExecutableSchema, addMockFunctionsToSchema } from 'apollo-server-express';
-import mocks from '../../test/mocks';
-import Resolvers from '../resolvers';
+import { gql } from 'apollo-server-express';
 
+import Fortune from './fortune.graphql';
+import Lesson from './lesson.graphql';
+import Lotto from './lotto.graphql';
 import RootQuery from './root.graphql';
 
-const logger = { log: err => console.log(err) };
 
-const SchemaDefinition = `
-schema {
-  query: Query
-}`;
+const schema = gql`
+  ${RootQuery}
+  ${Fortune}
+  ${Lesson}
+  ${Lotto}
+`
 
-const Schema = [
-  RootQuery,
-  SchemaDefinition,
-];
-
-const executableSchema = makeExecutableSchema({
-  typeDefs: Schema,
-  resolvers: Resolvers,
-  allowUndefinedInResolve: true,
-  logger,
-});
-
-addMockFunctionsToSchema({
-  schema: executableSchema,
-  mocks,
-  preserveResolvers: true,
-});
-
-export default executableSchema;
+export default schema;

@@ -1,6 +1,8 @@
 import express from 'express';
 import { ApolloServer } from 'apollo-server-express';
-import executableSchema from '../schema';
+
+import dataSources from '../connectors';
+import schema from '../schema';
 import resolvers from '../resolvers';
 
 const PORT = 5000;
@@ -8,8 +10,15 @@ const PORT = 5000;
 const app = express();
 
 const server = new ApolloServer({
-  schema: executableSchema
+  typeDefs: schema,
+  resolvers,
+  dataSources,
+  formatError: error => {
+    console.log(JSON.stringify(error, null, 2));
+    return new Error('An error')
+  },
 });
+
 server.applyMiddleware({ app, path: '/' });
 
 app.listen({ port: PORT }, () => 

@@ -1,4 +1,4 @@
-#Fortune Cookie API
+# Fortune Cookie API
 
 This is a fairly simple API to demonstrate how to set up a GraphQL server using Apollo Server 2. Using [The Fortune Cookie API](http://fortunecookieapi.herokuapp.com/)
 

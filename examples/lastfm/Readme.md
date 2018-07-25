@@ -1,22 +1,55 @@
-# Fortune Cookie API
+# LastFM
 
-This is a fairly simple API to demonstrate how to set up a GraphQL server using Apollo Server 2. Using [The Fortune Cookie API](http://fortunecookieapi.herokuapp.com/)
+A slightly more complicated example of a GraphQL API. This includes a larger schema, the potential to call multiple endpoints and also introduces the idea of passing API tokens to REST endpoints.
 
-## How to use:
+## How to use
+`cd examples/lastfm` from the main directory.
 
-From the main `gql_boilerplate` directory, in your terminal `cd examples/fortune-api`.
+`yarn` or `npm install` to install the required packages.
 
-Then run `npm install` or `yarn` to install the required packages.
+Create a `.env` file with a [LastFM API key](https://www.last.fm/api/account/create) as `LASTFM_KEY=<api key here>`.
 
-`npm start` or `yarn start` will then start the server locally at `http://localhost:5000`.
+`yarn start` or `npm start` to start the server.
+
+When querying you **have** to include a LastFM username, authentication isn't included in this example.
 
 ## Example Query
-
 ```graphql
 {
-  fortunes(limit: 5, skip: 500) {
-    id
-    message
+  lastfm {
+    user(username: "DonnyDarkheart") {
+      name
+      realname
+      url
+      image
+      country
+      gender
+      subscriber
+      playcount
+      playlists
+      lovedTracks {
+        name
+        id
+        url
+        date {
+          date
+          text
+        }
+        artist {
+          name
+          url
+          images {
+            small
+            medium
+          }
+        }
+        images {
+          small
+          medium
+          large
+        }
+      }
+    }
   }
 }
 ```

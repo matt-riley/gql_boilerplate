@@ -1,0 +1,20 @@
+type User {
+  id: ID
+  name: String
+  realname: String
+  url: String
+  image: String
+  country: String
+  gender: String
+  subscriber: Boolean
+  playcount: Int
+  playlists: Int
+  registeredDate: Date
+  lovedTracks: [Track]
+  recentTracks(
+    limit: Int,
+    page: Int,
+    from: String,
+    to: String
+  ): [Track]
+}

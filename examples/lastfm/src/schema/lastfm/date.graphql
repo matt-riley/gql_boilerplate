@@ -1,0 +1,5 @@
+type Date {
+  date: String
+  elapsed: String
+  text: String
+}

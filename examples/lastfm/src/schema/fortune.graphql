@@ -1,0 +1,7 @@
+"Fortunes are a key component to a fortune cookie. Fortunes contain a message, often a proverb the reader can easily relate to his or her own experiences, giving the illusion of a mysterious connection between self and cookie."
+type Fortune {
+  "ID of the Fortune"
+  id: String
+  "The fortune message"
+  message: String
+}

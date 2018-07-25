@@ -1,0 +1,5 @@
+type Bio {
+  published: String
+  summary: String
+  content: String
+}

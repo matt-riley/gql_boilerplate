@@ -1,0 +1,10 @@
+type Artist {
+  id: ID
+  name: String
+  url: String
+  images: Images
+  totalListeners: Int
+  totalPlays: Int
+  tags: [Tag]
+  bio: Bio
+}

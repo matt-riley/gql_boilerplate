@@ -1,0 +1,5 @@
+type LastFM {
+  user(
+    username: String!
+  ): User
+}

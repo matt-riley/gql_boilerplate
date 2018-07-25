@@ -1,0 +1,5 @@
+type Images {
+  small: String
+  medium: String
+  large: String
+}

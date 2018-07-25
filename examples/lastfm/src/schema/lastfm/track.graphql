@@ -1,0 +1,8 @@
+type Track {
+  name: String
+  id: ID
+  url: String
+  date: Date
+  artist: Artist
+  images: Images
+}

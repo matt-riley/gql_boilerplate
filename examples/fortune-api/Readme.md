@@ -8,7 +8,7 @@ From the main `gql_boilerplate` directory, in your terminal `cd examples/fortune
 
 Then run `npm install` or `yarn` to install the required packages.
 
-`npm start` or `yarn start` will then start the server locally at `http://localhost:5000`.
+`npm start` or `yarn start` will then start the server locally at [http://localhost:3000](http://localhost:3000).
 
 ## Example Query
 

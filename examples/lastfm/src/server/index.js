@@ -7,7 +7,7 @@ import schema from '../schema';
 import resolvers from '../resolvers';
 import './env';
 
-const PORT = 5000;
+const PORT = 3000;
 
 const app = express();
 

@@ -3,6 +3,7 @@ import User from './user';
 import Track from './track';
 import Date from './date';
 import Images from './images';
+import Artist from './artist';
 
 export default {
   ...LastFM,
@@ -10,4 +11,5 @@ export default {
   ...Track,
   ...Date,
   ...Images,
+  ...Artist,
 }

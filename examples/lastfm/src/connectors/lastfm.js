@@ -26,4 +26,22 @@ export default class LastFMAPI extends RESTDataSource {
     });
     return data.lovedtracks.track;
   }
+
+  async getRecentTracks(user, { limit, page }) {
+    const data = await this.get('2.0/', {
+      method: 'user.getrecenttracks',
+      user,
+      limit,
+      page,
+    });
+    return data.recenttracks.track;
+  }
+
+  async getArtistInfo(mbid) {
+    const data = await this.get('2.0/', {
+      method: 'artist.getinfo',
+      mbid,
+    });
+    return data.artist;
+  }
 }

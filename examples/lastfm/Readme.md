@@ -17,36 +17,11 @@ When querying you **have** to include a LastFM username, authentication isn't in
 ```graphql
 {
   lastfm {
-    user(username: "DonnyDarkheart") {
-      name
-      realname
-      url
-      image
-      country
-      gender
-      subscriber
-      playcount
-      playlists
-      lovedTracks {
+    user(username: "RJ") {
+      recentTracks(limit: 5) {
         name
-        id
-        url
-        date {
-          date
-          text
-        }
         artist {
           name
-          url
-          images {
-            small
-            medium
-          }
-        }
-        images {
-          small
-          medium
-          large
         }
       }
     }

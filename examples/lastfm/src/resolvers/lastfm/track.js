@@ -8,6 +8,9 @@ export default {
     },
     images({ image }) {
       return image;
+    },
+    artist({ artist: { mbid } }, _, { dataSources }) {
+      return dataSources.lastfmAPI.getArtistInfo(mbid);
     }
   }
 }

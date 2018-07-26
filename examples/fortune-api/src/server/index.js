@@ -5,7 +5,7 @@ import dataSources from '../connectors';
 import schema from '../schema';
 import resolvers from '../resolvers';
 
-const PORT = 5000;
+const PORT = 3000;
 
 const app = express();
 

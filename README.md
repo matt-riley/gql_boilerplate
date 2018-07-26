@@ -42,7 +42,7 @@ or
 npm start
 ```
 
-This will start the server locally and GraphQL Playground will be available at [http://localhost:5000](http://localhost:5000)
+This will start the server locally and GraphQL Playground will be available at [http://localhost:3000](http://localhost:3000)
 
 The only query possible with this boilerplate is:
 ```

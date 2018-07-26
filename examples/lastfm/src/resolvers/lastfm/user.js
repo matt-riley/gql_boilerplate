@@ -1,10 +1,16 @@
 export default {
   User: {
-    subscriber(pv) {
-      return (pv.subscriber === '0') ? false : true 
+    subscriber({ subscriber }) {
+      return (subscriber === '0') ? false : true 
     },
-    lovedTracks(pv, _,  { dataSources }) {
-      return dataSources.lastfmAPI.getUserLovedTracks(pv.name)
+    lovedTracks({ name }, _,  { dataSources }) {
+      return dataSources.lastfmAPI.getUserLovedTracks(name)
+    },
+    registeredDate({ registered }) {
+      return registered;
+    },
+    recentTracks({ name }, args, { dataSources }) {
+      return dataSources.lastfmAPI.getRecentTracks(name, args)
     }
   }
 }

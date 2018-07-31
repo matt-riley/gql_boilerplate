@@ -17,7 +17,13 @@ const server = new ApolloServer({
   dataSources,
   context: () => ({
     apiKey: process.env.LASTFM_KEY
-  })
+  }),
+  playground: {
+    settings: {
+      'editor.cursorShape': 'line',
+      'editor.theme': 'light',
+    }
+  },
 });
 
 server.applyMiddleware({ app, path: '/' });

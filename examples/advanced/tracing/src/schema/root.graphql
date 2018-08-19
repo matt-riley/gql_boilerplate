@@ -1,0 +1,6 @@
+type Query {
+  """
+  Last.fm Api
+  """
+  lastfm: LastFM
+}

@@ -13,6 +13,14 @@ const server = new ApolloServer({
   typeDefs: schema,
   resolvers,
   mocks,
+  playground: {
+    settings: {
+      'editor.cursorShape': 'line',
+      'editor.theme': 'light',
+      'request.credentials': 'include',
+      'tracing.hideTracingResponse': false,
+    }
+  }
 });
 
 server.applyMiddleware({ app, path: '/' });

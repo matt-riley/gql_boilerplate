@@ -24,7 +24,7 @@
     "babel-preset-env": "1.7.0",
     "babel-preset-minify": "0.4.3",
     "babel-preset-stage-0": "6.24.1",
-    "eslint": "5.0.1",
+    "eslint": "5.5.0",
     "eslint-config-airbnb-base": "13.0.0",
     "eslint-plugin-mocha": "5.2.0",
     "nodemon": "1.18.4"

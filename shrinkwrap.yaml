@@ -2,7 +2,7 @@ dependencies:
   apollo-datasource-rest: 0.1.5
   apollo-server-express: 2.1.0
   express: 4.16.3
-  graphql: 14.0.0
+  graphql: 14.0.2
 devDependencies:
   babel-cli: 6.26.0
   babel-plugin-transform-async-to-generator: 6.24.1
@@ -2538,14 +2538,14 @@ packages:
       graphql: ^0.13.0
     resolution:
       integrity: sha512-yHvPkweUB0+Q/GWH5wIG60bpt8CTwBklCSzQdEHmRUgAdEQKxw+9B7zB3dG7wB3Ym7M7lfrS4Ej+jtDZfA2UXg==
-  /graphql/14.0.0:
+  /graphql/14.0.2:
     dependencies:
       iterall: 1.2.2
     dev: false
     engines:
-      node: 6.x || 8.x || >= 10.x
+      node: '>= 6.x'
     resolution:
-      integrity: sha512-HGVcnO6B25YZcSt6ZsH6/N+XkYuPA7yMqJmlJ4JWxWlS4Tr8SHI56R1Ocs8Eor7V7joEZPRXPDH8RRdll1w44Q==
+      integrity: sha512-gUC4YYsaiSJT1h40krG3J+USGlwhzNTXSb4IOZljn9ag5Tj+RkoXrWp+Kh7WyE3t1NCfab5kzCuxBIvOMERMXw==
   /has-ansi/2.0.0:
     dependencies:
       ansi-regex: 2.1.1
@@ -4689,5 +4689,5 @@ specifiers:
   eslint-config-airbnb-base: 13.1.0
   eslint-plugin-mocha: 5.2.0
   express: 4.16.3
-  graphql: 14.0.0
+  graphql: 14.0.2
   nodemon: 1.18.4

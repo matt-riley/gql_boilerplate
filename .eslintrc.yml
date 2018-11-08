@@ -12,9 +12,8 @@ plugins:
 globals:
     chai: false
     expect: false
-    fs: false
-    nock: false
     sinon: false
+    executeQuery: false
 rules:
   "import/no-extraneous-dependencies":
     - error

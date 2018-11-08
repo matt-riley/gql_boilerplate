@@ -1,3 +1,4 @@
+![last commit](https://badgen.net/github/last-commit/matt-riley/gql_boilerplate) ![dependencies](https://badgen.net/david/dep/matt-riley/gql_boilerplate)
 # GraphQL Boilerplate
 
 The purpose of this repo is to provide myself with a simple boilerplate for setting up a GraphQL service.

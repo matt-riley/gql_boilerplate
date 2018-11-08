@@ -19,12 +19,10 @@ const server = new ApolloServer({
       'editor.theme': 'light',
       'request.credentials': 'include',
       'tracing.hideTracingResponse': false,
-    }
-  }
+    },
+  },
 });
 
 server.applyMiddleware({ app, path: '/' });
 
-app.listen({ port: PORT }, () => 
-  console.log(`🚀 Server ready at http://localhost:${PORT}${server.graphqlPath}`)
-);
+app.listen({ port: PORT }, () => console.log(`🚀 Server ready at http://localhost:${PORT}${server.graphqlPath}`));

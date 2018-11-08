@@ -1,5 +1,11 @@
 {
-  "presets": ["env"],
+  "presets": [
+    ["env", {
+      "targets": {
+        "node": "8.11.3"
+      }
+    }]
+  ],
   "compact": true,
   "plugins": [
     ["transform-import-to-read-file-sync", {

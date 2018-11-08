@@ -1,7 +1,5 @@
 # GraphQL Boilerplate
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/matt-riley/gql_boilerplate.svg)](https://greenkeeper.io/)
-
 The purpose of this repo is to provide myself with a simple boilerplate for setting up a GraphQL service.
 
 It's 'fully featured' in so much as the correct Babel plugins, directory structure and very, very basic setup is complete.
@@ -42,7 +40,7 @@ or
 npm start
 ```
 
-This will start the server locally and GraphiQL will be available at [http://localhost:5000/graphiql](http://localhost:5000/graphiql)
+This will start the server locally and GraphQL Playground will be available at [http://localhost:3000](http://localhost:3000)
 
 The only query possible with this boilerplate is:
 ```
@@ -55,7 +53,7 @@ The response should be:
 ```json
 {
   "data": {
-    "me": "Hello World"
+    "me": "foobar"
   }
 }
 ```

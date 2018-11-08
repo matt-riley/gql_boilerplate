@@ -1,3 +1,4 @@
-type RootQueryType {
+"The root query"
+type Query {
   me: String
 }

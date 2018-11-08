@@ -1,0 +1,10 @@
+type Lesson {
+  "ID of the lesson"
+  id: ID
+  "The Chinese version of the lesson"
+  chinese: String
+  "How to pronounce"
+  pronunciation: String
+  "The English translation"
+  english: String
+}

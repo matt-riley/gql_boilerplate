@@ -8,11 +8,14 @@
     "build": "NODE_ENV=production babel src -d build --copy-files --no-comments && npm run update-schema",
     "start": "nodemon --watch src -e js,graphql --exec babel-node -- src/server/index.js",
     "update-schema": "NODE_ENV=local babel-node ./scripts/build_schema.js",
-    "lint": "eslint src test"
+    "test": "npm run lint && npm run test-only",
+    "test-only": "NODE_ENV=test mocha test/setup.js $npm_package_options_unitTests --timeout 222000",
+    "lint": "eslint src test",
+    "lint-fix": "eslint \"src/**/*.js\" \"test/**/*.js\" --fix"
   },
   "dependencies": {
-    "apollo-datasource-rest": "0.1.5",
-    "apollo-server-express": "2.1.0",
+    "apollo-datasource-rest": "0.2.0",
+    "apollo-server-express": "2.2.0",
     "express": "4.16.4",
     "graphql": "14.0.2"
   },
@@ -29,13 +32,13 @@
     "chai-as-promised": "7.1.1",
     "chai-string": "1.4.0",
     "chai-subset": "1.6.0",
-    "eslint": "5.7.0",
+    "eslint": "5.8.0",
     "eslint-config-airbnb-base": "13.1.0",
     "eslint-plugin-import": "2.13.0",
     "eslint-plugin-mocha": "5.2.0",
     "mocha": "5.2.0",
     "mocha-sinon": "2.1.0",
-    "nodemon": "1.18.4",
+    "nodemon": "1.18.6",
     "sinon": "6.0.1",
     "sinon-chai": "3.2.0"
   }

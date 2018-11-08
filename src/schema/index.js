@@ -4,6 +4,6 @@ import RootQuery from './root.graphql';
 
 const schema = gql`
   ${RootQuery}
-`
+`;
 
-export default schema
+export default schema;

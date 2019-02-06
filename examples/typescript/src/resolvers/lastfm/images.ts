@@ -1,13 +1,21 @@
+import { ILastFMImage } from "../../interfaces/ILastFMUserInfo";
+
+function getImage(pv: ILastFMImage[], size: string): string {
+  const image: ILastFMImage | undefined = pv.find((img) => img.size === size);
+  if (typeof image !== undefined) { return image!["#text"]; }
+  return "";
+}
+
 export default {
   Images: {
-    small(parentValue) {
-      return parentValue.find(img => img.size === "small")["#text"];
+    small(parentValue: ILastFMImage[]): string {
+      return getImage(parentValue, "small");
     },
-    medium(parentValue) {
-      return parentValue.find(img => img.size === "medium")["#text"];
+    medium(parentValue: ILastFMImage[]) {
+      return getImage(parentValue, "medium");
     },
-    large(parentValue) {
-      return parentValue.find(img => img.size === "large")["#text"];
+    large(parentValue: ILastFMImage[]) {
+      return getImage(parentValue, "large");
     },
-  }
-}
+  },
+};

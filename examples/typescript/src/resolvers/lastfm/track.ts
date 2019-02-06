@@ -1,15 +1,17 @@
+import { ILastFMUserLovedtrackTrack } from "../../interfaces/ILastFMUserLovedTracks";
+
 export default {
   Track: {
-    id(parentValue) {
-      return parentValue.mbid;
+    id({ mbid }: { mbid: string }) {
+      return mbid;
     },
-    date({ date }) {
+    date({ date }: { date: string }) {
       return date;
     },
-    images({ image }) {
+    images({ image }: { image: string }) {
       return image;
     },
-    artist({ artist: { mbid } }, _: null, { dataSources }) {
+    artist({ artist: { mbid } }: { artist: { mbid: string } }, _: null, { dataSources }: { dataSources: any }) {
       return dataSources.lastfmAPI.getArtistInfo(mbid);
     },
   },

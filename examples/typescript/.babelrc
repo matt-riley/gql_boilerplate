@@ -4,10 +4,11 @@
       "@babel/env",
       {
         "targets": {
-          "node": "8.11.3"
+          "node": "current"
         }
       }
-    ]
+    ],
+    "@babel/typescript"
   ],
   "compact": true,
   "plugins": [
@@ -25,7 +26,8 @@
           "Error"
         ]
       }
-    ]
+    ],
+    "@babel/proposal-class-properties"
   ],
   "env": {
     "production": {

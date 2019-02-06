@@ -1,18 +1,20 @@
+import { ILastFMArtistTag } from "../../interfaces/ILastFMArtistInfo";
+
 export default {
   Artist: {
-    id({ mbid }) {
+    id({ mbid }: { mbid: string }) {
       return mbid;
     },
-    images({ image }) {
+    images({ image }: { image: string }) {
       return image;
     },
-    totalListeners({ stats: { listeners } }) {
+    totalListeners({ stats: { listeners } }: { stats: { listeners: string } }) {
       return listeners;
     },
-    totalPlays({ stats: { playcount } }) {
+    totalPlays({ stats: { playcount } }: { stats: { playcount: string } }) {
       return playcount;
     },
-    tags({ tags: { tag } }) {
+    tags({ tags: { tag } }: { tags: { tag: ILastFMArtistTag[] } }) {
       return tag;
     },
   },

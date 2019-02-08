@@ -1,0 +1,32 @@
+{
+  "presets": [
+    [
+      "@babel/env",
+      {
+        "targets": {
+          "node": "current"
+        }
+      }
+    ],
+    "@babel/typescript"
+  ],
+  "compact": true,
+  "plugins": [
+    [
+      "babel-plugin-transform-builtin-extend",
+      {
+        "globals": [
+          "Error"
+        ]
+      }
+    ],
+    "@babel/proposal-class-properties"
+  ],
+  "env": {
+    "production": {
+      "presets": [
+        "minify"
+      ]
+    }
+  }
+}

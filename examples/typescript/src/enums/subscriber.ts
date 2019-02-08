@@ -1,4 +1,4 @@
 export enum Subscriber {
-  "false",
-  "true",
+  'false',
+  'true',
 }

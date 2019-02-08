@@ -1,8 +1,8 @@
-import { ILastFMUserRegistered } from "../../interfaces/ILastFMUserInfo";
-import { ILastFMUserLovedtrackDate } from "../../interfaces/ILastFMUserLovedTracks";
+import { ILastFMUserRegistered } from '../../interfaces/ILastFMUserInfo';
+import { ILastFMUserLovedtrackDate } from '../../interfaces/ILastFMUserLovedTracks';
 
 function isRegistered(object: any): object is ILastFMUserRegistered {
-  return "unixtime" in object;
+  return 'unixtime' in object;
 }
 
 export default {
@@ -15,7 +15,7 @@ export default {
       }
     },
     text(parentValue: ILastFMUserLovedtrackDate | ILastFMUserRegistered) {
-      return parentValue["#text"];
+      return parentValue['#text'];
     },
   },
 };

@@ -1,4 +1,4 @@
-import LastFMAPI from "./lastfm";
+import LastFMAPI from './lastfm';
 
 const dataSources = () => {
   return {

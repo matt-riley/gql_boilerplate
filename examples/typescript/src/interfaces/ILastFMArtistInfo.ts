@@ -1,4 +1,4 @@
-import { ILastFMImage } from "./ILastFMUserInfo";
+import { ILastFMImage } from './ILastFMUserInfo';
 
 export interface ILastFMArtistStats {
   listeners: string;
@@ -25,7 +25,7 @@ export interface ILastFMArtistTags {
 }
 
 export interface ILastFMArtistLink {
-  "#text": string;
+  '#text': string;
   rel: string;
   href: string;
 }

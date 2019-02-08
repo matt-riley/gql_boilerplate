@@ -1,4 +1,4 @@
-import { ILastFMUserLovedtrackTrack } from "../../interfaces/ILastFMUserLovedTracks";
+import { ILastFMUserLovedtrackTrack } from '../../interfaces/ILastFMUserLovedTracks';
 
 export default {
   Track: {

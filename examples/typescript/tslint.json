@@ -11,7 +11,11 @@
     },
     "rules": {
         "no-console": false,
-        "forin":false
+        "forin": false,
+        "quotemark": [
+            true,
+            "single"
+        ]
     },
     "rulesDirectory": []
 }

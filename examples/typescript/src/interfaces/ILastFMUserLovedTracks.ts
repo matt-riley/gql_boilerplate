@@ -1,4 +1,4 @@
-import { ILastFMImage } from "./ILastFMUserInfo";
+import { ILastFMImage } from './ILastFMUserInfo';
 
 export interface ILastFMUserAttr {
   page: string;
@@ -16,12 +16,12 @@ export interface ILastFMUserLovedtrackArtist {
 
 export interface ILastFMUserLovedtrackDate {
   uts: string;
-  "#text": string;
+  '#text': string;
 }
 
 export interface ILastFMTrackStreamable {
   fulltrack: string;
-  "#text": string;
+  '#text': string;
 }
 
 export interface ILastFMUserLovedtrackTrack {
@@ -35,7 +35,7 @@ export interface ILastFMUserLovedtrackTrack {
 }
 
 export interface ILastFMUserLovedtrack {
-  "@attr": ILastFMUserAttr;
+  '@attr': ILastFMUserAttr;
   track: ILastFMUserLovedtrack[];
 }
 

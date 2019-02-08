@@ -1,11 +1,11 @@
 export interface ILastFMImage {
   size: string;
-  "#text": string;
+  '#text': string;
 }
 
 export interface ILastFMUserRegistered {
   unixtime: string;
-  "#text": number;
+  '#text': number;
 }
 
 export interface ILastFMUser {

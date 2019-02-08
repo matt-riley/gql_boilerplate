@@ -1,9 +1,9 @@
-import { ILastFMImage } from "./ILastFMUserInfo";
-import { ILastFMUserAttr } from "./ILastFMUserLovedTracks";
+import { ILastFMImage } from './ILastFMUserInfo';
+import { ILastFMUserAttr } from './ILastFMUserLovedTracks';
 
 export interface ILastFMUserRecentTrackArtist {
   mbid: string;
-  "#text": string;
+  '#text': string;
 }
 
 export interface ILastUserTrackAttr {
@@ -12,12 +12,12 @@ export interface ILastUserTrackAttr {
 
 export interface ILastFMUserAlbum {
   mbid: string;
-  "#text": string;
+  '#text': string;
 }
 
 export interface ILastFMUserRecentTrack {
   artist: ILastFMUserRecentTrackArtist;
-  "@attr": ILastUserTrackAttr;
+  '@attr': ILastUserTrackAttr;
   mbid: string;
   album: ILastFMUserAlbum;
   streamable: string;
@@ -27,7 +27,7 @@ export interface ILastFMUserRecentTrack {
 }
 
 export interface ILastFMUserRecentTracks {
-  "@attr": ILastFMUserAttr;
+  '@attr': ILastFMUserAttr;
   track: ILastFMUserRecentTrack[];
 }
 

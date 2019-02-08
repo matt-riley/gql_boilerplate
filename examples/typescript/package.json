@@ -17,8 +17,8 @@
     "test-only": "NODE_ENV=test nyc --reporter=lcov mocha test/setup.js $npm_package_options_tests --timeout 2000",
     "type-check": "tsc --noEmit",
     "type-check:watch": "npm run type-check -- --watch",
-    "lint": "eslint src test",
-    "lint-fix": "eslint \"src/**/*.js\" \"test/**/*.js\" --fix"
+    "lint": "tslint src test",
+    "lint:fix": "tslint \"src/**/*.ts\" \"test/**/*.ts\" --fix"
   },
   "dependencies": {
     "apollo-datasource-rest": "0.3.0",

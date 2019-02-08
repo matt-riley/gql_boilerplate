@@ -1,7 +1,7 @@
-import Root from "./root";
-import LastFM from "./lastfm";
+import LastFM from './lastfm';
+import Root from './root';
 
 export default {
   ...Root,
   ...LastFM,
-}
+};

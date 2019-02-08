@@ -1,4 +1,4 @@
-import { ILastFMArtistTag } from "../../interfaces/ILastFMArtistInfo";
+import { ILastFMArtistTag } from '../../interfaces/ILastFMArtistInfo';
 
 export default {
   Artist: {

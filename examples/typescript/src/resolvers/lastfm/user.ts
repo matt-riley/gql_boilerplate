@@ -1,9 +1,9 @@
-import { Subscriber } from "../../enums/subscriber";
+import { Subscriber } from '../../enums/subscriber';
 
 export default {
   User: {
     subscriber({ subscriber }: { subscriber: string }) {
-      if (Subscriber[parseInt(subscriber, 10)] === "true") { return true; }
+      if (Subscriber[parseInt(subscriber, 10)] === 'true') { return true; }
       return false;
     },
     lovedTracks({ name }: { name: string }, _: null, { dataSources }: { dataSources: any }) {

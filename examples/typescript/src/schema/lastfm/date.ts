@@ -1,0 +1,8 @@
+export default `
+  type Date {
+    "The date - Unix Time"
+    date: String
+    "The text version of the date"
+    text: String
+  }
+`;

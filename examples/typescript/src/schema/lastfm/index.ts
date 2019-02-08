@@ -1,11 +1,11 @@
-import Artist from "./artist.graphql";
-import Bio from "./bio.graphql";
-import Date from "./date.graphql";
-import Image from "./image.graphql";
-import Lastfm from "./lastfm.graphql";
-import Tag from "./tag.graphql";
-import Track from "./track.graphql";
-import User from "./user.graphql";
+import Artist from "./artist";
+import Bio from "./bio";
+import Date from "./date";
+import Image from "./image";
+import Lastfm from "./lastfm";
+import Tag from "./tag";
+import Track from "./track";
+import User from "./user";
 
 export default `
   ${Artist},

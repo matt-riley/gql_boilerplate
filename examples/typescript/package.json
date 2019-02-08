@@ -3,17 +3,16 @@
   "repository": "git@github.com:matt-riley/gql_boilerplate.git",
   "author": "Matt Riley <matt@mattriley.me> (https://mattriley.me)",
   "license": "MIT",
-  "main": "lib/index.js",
   "options": {
     "tests": "test/"
   },
   "scripts": {
     "babel:dev": "babel-node --extensions '.ts' src/server/index.ts",
     "prebuild": "tsc --emitDeclarationOnly",
-    "build": "NODE_ENV=production babel src --out-dir lib --extensions \".ts\" -d build --copy-files --no-comments --source-maps inline && npm run update-schema",
-    "start": "nodemon --watch src -e js,graphql --exec babel-node -- src/server/index.js",
+    "build": "NODE_ENV=production babel src --out-dir build --extensions \".ts\" -d build --copy-files --no-comments --source-maps inline",
+    "prestart": "npm run build",
+    "start": "node build/server/index.js",
     "start:dev": "nodemon --watch src -e .ts --exec npm run babel:dev",
-    "update-schema": "NODE_ENV=local babel-node ./scripts/build_schema.js",
     "test": "npm run lint && npm run test-only",
     "test-only": "NODE_ENV=test nyc --reporter=lcov mocha test/setup.js $npm_package_options_tests --timeout 2000",
     "type-check": "tsc --noEmit",
@@ -22,8 +21,8 @@
     "lint-fix": "eslint \"src/**/*.js\" \"test/**/*.js\" --fix"
   },
   "dependencies": {
-    "apollo-datasource-rest": "0.2.2",
-    "apollo-server-express": "2.3.3",
+    "apollo-datasource-rest": "0.3.0",
+    "apollo-server-express": "2.4.0",
     "dotenv": "6.2.0",
     "express": "4.16.4",
     "graphql": "14.1.1"
@@ -32,13 +31,12 @@
     "@babel/cli": "7.2.3",
     "@babel/core": "7.2.2",
     "@babel/node": "7.2.2",
-    "@babel/plugin-proposal-class-properties": "^7.3.0",
+    "@babel/plugin-proposal-class-properties": "7.3.0",
     "@babel/preset-env": "7.3.1",
     "@babel/preset-typescript": "7.1.0",
-    "@types/dotenv": "^6.1.0",
-    "@types/graphql": "^14.0.5",
+    "@types/dotenv": "6.1.0",
+    "@types/graphql": "14.0.5",
     "babel-plugin-transform-builtin-extend": "1.1.2",
-    "babel-plugin-transform-import-to-read-file-sync": "0.2.1",
     "babel-preset-minify": "0.5.0",
     "chai": "4.2.0",
     "chai-as-promised": "7.1.1",
@@ -55,6 +53,6 @@
     "sinon": "7.2.3",
     "sinon-chai": "3.3.0",
     "tslint": "5.12.1",
-    "typescript": "3.3.1"
+    "typescript": "3.3.3"
   }
 }

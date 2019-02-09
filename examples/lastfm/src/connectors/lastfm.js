@@ -3,12 +3,12 @@ import { RESTDataSource } from 'apollo-datasource-rest';
 export default class LastFMAPI extends RESTDataSource {
   constructor() {
     super();
-    this.baseURL = 'http://ws.audioscrobbler.com/'
+    this.baseURL = 'http://ws.audioscrobbler.com/';
   }
 
   willSendRequest(request) {
-    request.params.set('api_key', this.context.apiKey)
-    request.params.set('format', 'json')
+    request.params.set('api_key', this.context.apiKey);
+    request.params.set('format', 'json');
   }
 
   async getUserInfo(user) {

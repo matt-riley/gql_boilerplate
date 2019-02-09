@@ -16,18 +16,16 @@ const server = new ApolloServer({
   resolvers,
   dataSources,
   context: () => ({
-    apiKey: process.env.LASTFM_KEY
+    apiKey: process.env.LASTFM_KEY,
   }),
   playground: {
     settings: {
       'editor.cursorShape': 'line',
       'editor.theme': 'light',
-    }
+    },
   },
 });
 
 server.applyMiddleware({ app, path: '/' });
 
-app.listen({ port: PORT }, () => 
-  console.log(`🚀 Server ready at http://localhost:${PORT}${server.graphqlPath}`)
-);
+app.listen({ port: PORT }, () => console.log(`🚀 Server ready at http://localhost:${PORT}${server.graphqlPath}`));

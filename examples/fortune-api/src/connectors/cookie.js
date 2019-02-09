@@ -3,11 +3,11 @@ import { RESTDataSource } from 'apollo-datasource-rest';
 export default class CookiesAPI extends RESTDataSource {
   constructor() {
     super();
-    this.baseURL = 'http://fortunecookieapi.herokuapp.com/'
+    this.baseURL = 'http://fortunecookieapi.herokuapp.com/';
   }
 
-  async getFortunesList({ limit = 100, skip = 0, page = 1 }) {
-    return await this.get('v1/fortunes', {
+  getFortunesList({ limit = 100, skip = 0, page = 1 }) {
+    return this.get('v1/fortunes', {
       limit,
       skip,
       page,
@@ -15,11 +15,11 @@ export default class CookiesAPI extends RESTDataSource {
   }
 
   async getIndividualFortune({ id }) {
-    return [await this.get(`v1/fortunes/${id}`)]
+    return [await this.get(`v1/fortunes/${id}`)];
   }
 
-  async getLessonsList({ limit = 100, skip = 0, page = 1 }) {
-    return await this.get('v1/lessons', {
+  getLessonsList({ limit = 100, skip = 0, page = 1 }) {
+    return this.get('v1/lessons', {
       limit,
       skip,
       page,
@@ -27,11 +27,11 @@ export default class CookiesAPI extends RESTDataSource {
   }
 
   async getIndividualLesson({ id }) {
-    return [await this.get(`v1/lessons/${id}`)]
+    return [await this.get(`v1/lessons/${id}`)];
   }
 
-  async getLottosList({ limit = 100, skip = 0, page = 1 }) {
-    return await this.get('v1/lottos', {
+  getLottosList({ limit = 100, skip = 0, page = 1 }) {
+    return this.get('v1/lottos', {
       limit,
       skip,
       page,
@@ -39,6 +39,6 @@ export default class CookiesAPI extends RESTDataSource {
   }
 
   async getIndividualLotto({ id }) {
-    return [await this.get(`v1/lottos/${id}`)]
+    return [await this.get(`v1/lottos/${id}`)];
   }
 }

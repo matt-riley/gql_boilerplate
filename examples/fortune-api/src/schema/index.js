@@ -11,6 +11,6 @@ const schema = gql`
   ${Fortune}
   ${Lesson}
   ${Lotto}
-`
+`;
 
 export default schema;

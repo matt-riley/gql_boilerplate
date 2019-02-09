@@ -3,7 +3,7 @@ import { ApolloServer } from 'apollo-server-express';
 
 import schema from '../schema';
 import resolvers from '../resolvers';
-import mocks from '../../test/mocks';
+import mocks from '../mocks';
 
 const PORT = 3000;
 

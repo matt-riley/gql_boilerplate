@@ -11,9 +11,9 @@
     "start": "nodemon --watch src -e js,graphql --exec babel-node -- src/server/index.js",
     "update-schema": "NODE_ENV=local babel-node ./scripts/build_schema.js",
     "test": "npm run lint && npm run test-only",
-    "test-only": "NODE_ENV=test nyc --reporter=lcov mocha test/setup.js $npm_package_options_tests --timeout 2000",
-    "lint": "eslint src test",
-    "lint-fix": "eslint \"src/**/*.js\" \"test/**/*.js\" --fix"
+    "test-only": "jest",
+    "lint": "eslint src",
+    "lint:fix": "eslint \"src/**/*.js\" --fix"
   },
   "dependencies": {
     "apollo-datasource-rest": "0.3.0",
@@ -29,19 +29,17 @@
     "babel-plugin-transform-builtin-extend": "1.1.2",
     "babel-plugin-transform-import-to-read-file-sync": "0.2.1",
     "babel-preset-minify": "0.5.0",
-    "chai": "4.2.0",
-    "chai-as-promised": "7.1.1",
-    "chai-string": "1.5.0",
-    "chai-subset": "1.6.0",
     "eslint": "5.13.0",
     "eslint-config-airbnb-base": "13.1.0",
     "eslint-plugin-import": "2.16.0",
-    "eslint-plugin-mocha": "5.2.1",
-    "mocha": "5.2.0",
-    "mocha-sinon": "2.1.0",
-    "nodemon": "1.18.10",
-    "nyc": "13.2.0",
-    "sinon": "7.2.3",
-    "sinon-chai": "3.3.0"
+    "jest": "^24.1.0",
+    "nodemon": "1.18.10"
+  },
+  "jest": {
+    "automock": true,
+    "collectCoverage": true,
+    "coverageReporters": [
+      "lcov"
+    ]
   }
 }

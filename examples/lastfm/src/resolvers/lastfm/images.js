@@ -8,6 +8,6 @@ export default {
     },
     large(parentValue) {
       return parentValue.find(img => img.size === 'large')['#text'];
-    }
-  }
-}
+    },
+  },
+};

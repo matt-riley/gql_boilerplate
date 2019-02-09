@@ -7,6 +7,6 @@ import LastFM from './lastfm';
 const schema = gql`
   ${RootQuery}
   ${LastFM}
-`
+`;
 
 export default schema;

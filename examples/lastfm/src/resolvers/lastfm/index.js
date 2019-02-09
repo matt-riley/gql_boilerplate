@@ -12,4 +12,4 @@ export default {
   ...Date,
   ...Images,
   ...Artist,
-}
+};

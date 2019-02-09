@@ -10,10 +10,10 @@ export default {
       return listeners;
     },
     totalPlays({ stats: { playcount } }) {
-      return playcount
+      return playcount;
     },
-    tags({ tags: { tag }}) {
+    tags({ tags: { tag } }) {
       return tag;
-    }
-  }
-}
+    },
+  },
+};

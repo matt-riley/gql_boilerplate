@@ -1,7 +1,7 @@
 export default {
   Track: {
-    id(parentValue) {
-      return parentValue.mbid;
+    id({ mbid }) {
+      return mbid;
     },
     date({ date }) {
       return date;
@@ -11,6 +11,6 @@ export default {
     },
     artist({ artist: { mbid } }, _, { dataSources }) {
       return dataSources.lastfmAPI.getArtistInfo(mbid);
-    }
-  }
-}
+    },
+  },
+};

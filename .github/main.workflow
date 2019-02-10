@@ -8,86 +8,35 @@ workflow "On push" {
   ]
 }
 
-action "Modified ./schema File Filter" {
-  uses = "nholden/modified-file-filter-action@1.0"
-  args = "schema.graphql"
-  secrets = ["GITHUB_TOKEN"]
-}
-
-action "Graphql Inspector Main" {
-  uses = "kamilkisiela/graphql-inspector@v0.12.0"
-  needs = ["Modified ./schema File Filter"]
-  secrets = ["GITHUB_TOKEN"]
-}
-
-action "Modified examples/fortune-api/schema File Filter" {
-  uses = "nholden/modified-file-filter-action@1.0"
-  args = "examples/fortune-api/schema.graphql"
-  secrets = ["GITHUB_TOKEN"]
-}
-
-action "Graphql Inspector Fortune" {
-  uses = "kamilkisiela/graphql-inspector@v0.12.0"
-  needs = ["Modified examples/fortune-api/schema File Filter"]
-  secrets = ["GITHUB_TOKEN"]
-  args = "examples/fortune-api/schema.graphql"
-}
-
-action "Modified examples/lastfm/schema File Filter" {
-  uses = "nholden/modified-file-filter-action@1.0"
-  args = "examples/lastfm/schema.graphql"
-  secrets = ["GITHUB_TOKEN"]
-}
-
-action "Graphql Inspector Lastfm" {
-  uses = "kamilkisiela/graphql-inspector@v0.12.0"
-  needs = ["Modified examples/lastfm/schema File Filter"]
-  secrets = ["GITHUB_TOKEN"]
-  args = "examples/lastfm/schema.graphql"
-}
-
-action "Modified examples/typescript/schema File Filter" {
-  uses = "nholden/modified-file-filter-action@1.0"
-  args = "examples/lastfm/schema.graphql"
-  secrets = ["GITHUB_TOKEN"]
+workflow "On PR" {
+  on = "pull_request"
+  resolves = [
+    "Graphql Inspector Main",
+    "Graphql Inspector Fortune",
+    "Graphql Inspector Lastfm",
+    "Graphql Inspector Typescript",
+  ]
 }
 
 action "Graphql Inspector Typescript" {
   uses = "kamilkisiela/graphql-inspector@v0.12.0"
-  needs = ["Modified examples/typescript/schema File Filter"]
   secrets = ["GITHUB_TOKEN"]
   args = "examples/typescript/schema.graphql"
 }
 
-workflow "On PR" {
-  on = "pull_request"
-  resolves = [
-    "Graphql Inspector Main PR",
-    "Graphql Inspector Fortune PR",
-    "Graphql Inspector Lastfm PR",
-    "Graphql Inspector Typescript PR",
-  ]
-}
-
-action "Graphql Inspector Typescript PR" {
-  uses = "kamilkisiela/graphql-inspector@v0.12.0"
-  secrets = ["GITHUB_TOKEN"]
-  args = "examples/typescript/schema.graphql"
-}
-
-action "Graphql Inspector Lastfm PR" {
+action "Graphql Inspector Lastfm" {
   uses = "kamilkisiela/graphql-inspector@v0.12.0"
   secrets = ["GITHUB_TOKEN"]
   args = "examples/lastfm/schema.graphql"
 }
 
-action "Graphql Inspector Fortune PR" {
+action "Graphql Inspector Fortune" {
   uses = "kamilkisiela/graphql-inspector@v0.12.0"
   secrets = ["GITHUB_TOKEN"]
   args = "examples/fortune-api/schema.graphql"
 }
 
-action "Graphql Inspector Main PR" {
+action "Graphql Inspector Main" {
   uses = "kamilkisiela/graphql-inspector@v0.12.0"
   secrets = ["GITHUB_TOKEN"]
 }

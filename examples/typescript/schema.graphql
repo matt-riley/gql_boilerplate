@@ -1,0 +1,146 @@
+"""The type for a recording artist"""
+type Artist {
+  """The musicbrainz id for the artist"""
+  id: ID
+
+  """The artists name"""
+  name: String
+
+  """The URL to the artists Last.fm page"""
+  url: String
+
+  """Images of the Artist"""
+  images: Images
+
+  """The total amount of listeners for the Artist"""
+  totalListeners: String
+
+  """The total amount of plays the artist has had"""
+  totalPlays: String
+
+  """Tags assigned to the artist"""
+  tags: [Tag]
+
+  """The artists biography"""
+  bio: Bio
+}
+
+type Bio {
+  """Date the bio was published"""
+  published: String
+
+  """A summary of the bio"""
+  summary: String
+
+  """The full bio"""
+  content: String
+}
+
+type Date {
+  """The date - Unix Time"""
+  date: String
+
+  """The text version of the date"""
+  text: String
+}
+
+type Images {
+  """The smallest version of the image"""
+  small: String
+
+  """The medium size of the image"""
+  medium: String
+
+  """The large size of the image"""
+  large: String
+}
+
+type LastFM {
+  """The last.fm user"""
+  user(
+    """
+    The last.fm username, this **must** be passed into the query else it will fail
+    """
+    username: String!
+  ): User
+}
+
+type Query {
+  """Last.fm API"""
+  lastfm: LastFM
+}
+
+type Tag {
+  """The name of the tag"""
+  name: String
+
+  """The url to the last.fm page for the tag"""
+  url: String
+}
+
+type Track {
+  """The name of the track"""
+  name: String
+
+  """The musicbrainz id for the track"""
+  id: ID
+
+  """The url for the last.fm page for the track"""
+  url: String
+
+  """The date of the track"""
+  date: Date
+
+  """The artist for the track"""
+  artist: Artist
+
+  """Any images for the track"""
+  images: Images
+}
+
+type User {
+  """The users ID"""
+  id: ID
+
+  """The users username"""
+  name: String
+
+  """The users real name"""
+  realname: String
+
+  """The url for the users Last.fm profile"""
+  url: String
+
+  """The users avatar"""
+  image: Images
+
+  """The country in which the user resides"""
+  country: String
+
+  """The users gender"""
+  gender: String
+
+  """Returns if the user is a Last.fm subscriber or not"""
+  subscriber: Boolean
+
+  """The users total playcount"""
+  playcount: Int
+
+  """The number of playlists the user has"""
+  playlists: Int
+
+  """The date the user registered"""
+  registeredDate: Date
+
+  """A list of the users loved tracks"""
+  lovedTracks: [Track]
+
+  """A list of the users recently played tracks"""
+  recentTracks(
+    """Limit the amount of recently played tracks to return"""
+    limit: Int
+
+    """The page of recently played tracks which you wish to return"""
+    page: Int
+  ): [Track]
+}

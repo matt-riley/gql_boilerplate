@@ -8,7 +8,7 @@ action "GraphQL Inspector on Push" {
   secrets = ["GITHUB_TOKEN"]
 }
 
-workflow "New workflow 1" {
+workflow "On PR" {
   on = "pull_request"
   resolves = [
     "Graphql Inspector Main",

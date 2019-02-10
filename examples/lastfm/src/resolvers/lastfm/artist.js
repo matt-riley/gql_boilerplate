@@ -1,6 +1,6 @@
 export default {
   Artist: {
-    id({ mbid }) {
+    idy({ mbid }) {
       return mbid;
     },
     images({ image }) {

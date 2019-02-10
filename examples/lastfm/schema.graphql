@@ -1,7 +1,7 @@
 """The type for a recording artist"""
 type Artist {
   """The musicbrainz id for the artist"""
-  id: ID
+  idy: ID
 
   """The artists name"""
   name: String

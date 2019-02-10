@@ -36,7 +36,6 @@
     "nodemon": "1.18.10"
   },
   "jest": {
-    "automock": true,
     "collectCoverage": true,
     "coverageReporters": [
       "lcov"

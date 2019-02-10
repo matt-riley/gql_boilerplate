@@ -45,8 +45,7 @@ describe('User resolver', () => {
   });
 
   test('LovedTracks', () => {
-    // eslint-disable-next-line
-    const lovedTracks = user.User.lovedTracks(parentValue, null, fakeContext)
+    user.User.lovedTracks(parentValue, null, fakeContext);
     expect(fakeContext.dataSources.lastfmAPI.getUserLovedTracks).toHaveBeenCalledTimes(1);
   });
 
@@ -55,8 +54,7 @@ describe('User resolver', () => {
   });
 
   test('Recent Tracks', () => {
-    // eslint-disable-next-line
-    const recentTracks = user.User.recentTracks(parentValue, { limit: 10 }, fakeContext);
+    user.User.recentTracks(parentValue, { limit: 10 }, fakeContext);
     expect(fakeContext.dataSources.lastfmAPI.getRecentTracks).toHaveBeenCalledTimes(1);
     expect(fakeContext.dataSources.lastfmAPI.getRecentTracks).toHaveBeenCalledWith(parentValue.name, { limit: 10 });
   });

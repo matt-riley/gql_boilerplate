@@ -1,17 +1,5 @@
 import LastFMAPI from '../../src/connectors/lastfm';
 
-// const mockGet = jest.fn();
-// const mockGetUserInfo = jest.fn();
-
-// jest.mock('../../src/connectors/lastfm', () => {
-//   return jest.fn().mockImplementation(() => {
-//     return {
-//       get: mockGet,
-//       getUserInfo: mockGetUserInfo,
-//     };
-//   });
-// });
-
 describe('LastFMAPI', () => {
   let lastfm;
   beforeEach(() => {

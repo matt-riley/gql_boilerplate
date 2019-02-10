@@ -9,9 +9,10 @@
     "start": "nodemon --watch src -e js,graphql --exec babel-node -- src/server/index.js",
     "update-schema": "NODE_ENV=local babel-node ./scripts/build_schema.js",
     "test": "npm run lint && npm run test:only",
-    "test:all": "run-p test:fortune test:lastfm",
+    "test:all": "run-p test:fortune test:lastfm test:tsLastfm",
     "test:fortune": "cd examples/fortune-api && npm i && npm run test",
     "test:lastfm": "cd examples/lastfm && npm i && npm run test",
+    "test:tsLastfm": "cd examples/typescript && npm i && npm run test",
     "test:only": "jest",
     "lint": "eslint src",
     "lint:fix": "eslint \"src/**/*.js\" --fix"

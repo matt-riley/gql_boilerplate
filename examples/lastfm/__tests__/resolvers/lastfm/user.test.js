@@ -1,7 +1,6 @@
 import fakeContext from '../../../__mocks__/fakeContext';
 import user from '../../../src/resolvers/lastfm/user';
 
-// eslint-disable-next-line
 jest.mock('../../../src/connectors/lastfm');
 
 describe('User resolver', () => {

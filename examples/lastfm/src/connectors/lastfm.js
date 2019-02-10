@@ -16,6 +16,7 @@ export default class LastFMAPI extends RESTDataSource {
       method: 'user.getinfo',
       user,
     });
+
     return data.user;
   }
 

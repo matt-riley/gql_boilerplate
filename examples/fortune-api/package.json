@@ -37,5 +37,12 @@
     "coverageReporters": [
       "lcov"
     ]
+  },
+  "graphql-inspector": {
+    "diff": true,
+    "schema": {
+      "ref": "master",
+      "path": "schema.graphql"
+    }
   }
 }

@@ -10,9 +10,8 @@ parserOptions:
 plugins:
   - mocha
 globals:
-    chai: false
-    expect: false
-    sinon: false
+    jest: readable
+    expect: readable
     executeQuery: false
 rules:
   "import/no-extraneous-dependencies":

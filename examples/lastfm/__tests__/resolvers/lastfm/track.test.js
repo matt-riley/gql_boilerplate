@@ -1,7 +1,6 @@
 import fakeContext from '../../../__mocks__/fakeContext';
 import track from '../../../src/resolvers/lastfm/track';
 
-// eslint-disable-next-line
 jest.mock('../../../src/connectors/lastfm');
 
 describe('Track resolver', () => {
@@ -54,8 +53,7 @@ describe('Track resolver', () => {
   });
 
   test('Artist', () => {
-    // eslint-disable-next-line
-    const artist = track.Track.artist(parentValue, true, fakeContext);
+    track.Track.artist(parentValue, true, fakeContext);
     expect(fakeContext.dataSources.lastfmAPI.getArtistInfo).toHaveBeenCalled();
   });
 });

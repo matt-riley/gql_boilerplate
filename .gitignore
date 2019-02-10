@@ -40,3 +40,5 @@ jspm_packages
 build/
 
 lib/
+
+.DS_Store

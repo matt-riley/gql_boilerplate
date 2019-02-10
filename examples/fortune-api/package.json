@@ -3,9 +3,6 @@
   "repository": "git@github.com:matt-riley/gql_boilerplate.git",
   "author": "Matt Riley <matt@mattriley.me> (https://mattriley.me)",
   "license": "MIT",
-  "options": {
-    "tests": "test/"
-  },
   "scripts": {
     "build": "NODE_ENV=production babel src -d build --copy-files --no-comments && npm run update-schema",
     "start": "nodemon --watch src -e js,graphql --exec babel-node -- src/server/index.js",

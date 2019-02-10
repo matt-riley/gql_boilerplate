@@ -13,6 +13,6 @@ describe('root resolver', () => {
     test(`${type} - id arg`, () => {
       root.Query[`${type.toLowerCase()}s`](null, { id: 1 }, fakeContext);
       expect(fakeContext.dataSources.cookieAPI[`getIndividual${type}`]);
-    })
+    });
   });
 });

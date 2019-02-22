@@ -45,7 +45,7 @@
     "jest": "^24.1.0",
     "nodemon": "1.18.10",
     "tslint": "5.12.1",
-    "typescript": "3.3.3"
+    "typescript": "3.3.3333"
   },
   "jest": {
     "collectCoverage": true,

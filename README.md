@@ -20,23 +20,13 @@ This will allow you to reinitialise git and make it unique for your project.
 Then:
 
 ```bash
-yarn install
-```
-or
-```bash
-npm install
+yarn install or npm install
 ```
 
 To grab all of the packages.
 
 ```bash
-yarn start
-```
-
-or
-
-```bash
-npm start
+yarn start or npm start
 ```
 
 This will start the server locally and GraphQL Playground will be available at [http://localhost:3000](http://localhost:3000)
@@ -56,3 +46,5 @@ The response should be:
   }
 }
 ```
+
+For more examples using this boilerplate have a look in the [GraphQL Examples](https://github.com/matt-riley/graphql_examples) repo.

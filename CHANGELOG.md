@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+# [2.4.0](https://github.com/matt-riley/gql_boilerplate/compare/v2.3.0...v2.4.0) (2019-02-24)
+
+
+### Features
+
+* **remove-examples:** Removes examples and moves them to their own repo ([#248](https://github.com/matt-riley/gql_boilerplate/issues/248)) ([c3933e4](https://github.com/matt-riley/gql_boilerplate/commit/c3933e4))
+
+
+
+# Change Log
+
+All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
 # 2.3.0 (2019-02-19)
 
 

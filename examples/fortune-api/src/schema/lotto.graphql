@@ -1,7 +1,0 @@
-type Lotto {
-  "ID of the lotto numbers"
-  id: ID
-
-  "Array of the lotto numbers"
-  numbers: [Int]
-}

@@ -8,7 +8,7 @@
     "build": "NODE_ENV=production babel src -d build --copy-files --no-comments && npm run update-schema",
     "start": "nodemon --watch src -e js,graphql --exec babel-node -- src/server/index.js",
     "update-schema": "NODE_ENV=local babel-node ./scripts/build_schema.js",
-    "test": "npm run lint && npm run test:only",
+    "test": "npm run lint",
     "test:only": "jest",
     "lint": "eslint src",
     "lint:fix": "eslint \"src/**/*.js\" --fix",

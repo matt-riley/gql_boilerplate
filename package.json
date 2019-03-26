@@ -13,6 +13,7 @@
     "lint": "eslint src",
     "lint:fix": "eslint \"src/**/*.js\" --fix",
     "release": "standard-version",
+    "precommit": "npm run update-schema && git add -A",
     "commit": "npx git-cz"
   },
   "dependencies": {

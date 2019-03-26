@@ -55,5 +55,12 @@
     "skip": {
       "tag": true
     }
+  },
+  "graphql-inspector": {
+    "diff": true,
+    "schema": {
+      "ref": "head/master",
+      "path": "schema.graphql"
+    }
   }
 }

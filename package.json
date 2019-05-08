@@ -16,7 +16,7 @@
     "commit": "npx git-cz"
   },
   "dependencies": {
-    "apollo-datasource-rest": "0.3.2",
+    "apollo-datasource-rest": "0.4.0",
     "apollo-server-express": "2.4.8",
     "express": "4.16.4",
     "graphql": "14.1.1"

@@ -5,7 +5,9 @@
       "LICENSE",
       "CODE_OF_CONDUCT.md",
       "CHANGELOG.md",
-      ".github/**/*"
+      ".github/**/*",
+      ".circleci/**/*",
+      "assets/**/*"
     ]
   }
 ]

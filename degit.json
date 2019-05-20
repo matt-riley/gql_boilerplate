@@ -2,12 +2,12 @@
   {
     "action": "remove",
     "files": [
-      "./LICENSE",
-      "./CODE_OF_CONDUCT.md",
-      "./CHANGELOG.md",
-      "./.github/**/*",
-      "./.circleci/**/*",
-      "./assets/**/*"
+      "LICENSE",
+      "CODE_OF_CONDUCT.md",
+      "CHANGELOG.md",
+      ".github/**/*",
+      ".circleci/**/*",
+      "assets/**/*"
     ]
   }
 ]

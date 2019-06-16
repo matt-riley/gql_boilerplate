@@ -23,7 +23,7 @@ const server = new ApolloServer({
   playground: {
     settings: {
       'editor.cursorShape': 'line',
-      'editor.theme': 'light',
+      'editor.theme': 'dark',
       'request.credentials': 'include',
       'tracing.hideTracingResponse': false,
     },

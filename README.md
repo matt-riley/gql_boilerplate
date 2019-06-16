@@ -12,9 +12,9 @@ It's 'fully featured' in so much as the correct Babel plugins, directory structu
 
 ## How to use
 
-```bash
-npx degit matt-riley/gql_boilerplate <name_of_your_directory>
-```
+Click the `Use this template` button (or [here](https://github.com/matt-riley/gql_boilerplate/generate)) and fill in all of the relevant fields.
+
+Clone your new repository.
 
 Go into the directory which contains the boilerplate:
 
@@ -51,5 +51,7 @@ The response should be:
   }
 }
 ```
+
+An example instance can be found [here](https://gql-boilerplate.glitch.me/).
 
 For more examples using this boilerplate have a look in the [GraphQL Examples](https://github.com/matt-riley/graphql_examples) repo.

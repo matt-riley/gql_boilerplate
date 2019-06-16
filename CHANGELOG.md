@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.5.0](https://github.com/matt-riley/gql_boilerplate/compare/v2.4.2...v2.5.0) (2019-06-16)
+
+
+### Features
+
+* **logger.js:** Adds a logger to the context ([6370435](https://github.com/matt-riley/gql_boilerplate/commit/6370435))
+
+
+
 ### [2.4.2](https://github.com/matt-riley/gql_boilerplate/compare/v2.4.1...v2.4.2) (2019-05-31)
 
 

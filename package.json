@@ -6,7 +6,9 @@
   "license": "MIT",
   "scripts": {
     "build": "NODE_ENV=production babel src -d build --copy-files --no-comments && npm run update-schema",
-    "start": "nodemon --watch src -e js,graphql --exec babel-node -- src/server/index.js",
+    "start:dev": "nodemon --watch src -e js,graphql --exec babel-node -- src/server/index.js",
+    "prestart": "npm run build",
+    "start": "node build/server/index.js",
     "update-schema": "NODE_ENV=local babel-node ./scripts/build_schema.js",
     "test": "npm run lint",
     "test:only": "jest",

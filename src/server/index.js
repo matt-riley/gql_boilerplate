@@ -5,12 +5,19 @@ import schema from '../schema';
 import resolvers from '../resolvers';
 import mocks from '../mocks';
 
-const PORT = 3000;
+import logger from '../config/logger';
+
+const PORT = process.env.PORT || 3000;
+
+const context = () => {
+  return { logger };
+};
 
 const app = express();
 
 const server = new ApolloServer({
   typeDefs: schema,
+  context,
   resolvers,
   mocks,
   playground: {
@@ -25,4 +32,4 @@ const server = new ApolloServer({
 
 server.applyMiddleware({ app, path: '/' });
 
-app.listen({ port: PORT }, () => console.log(`🚀 Server ready at http://localhost:${PORT}${server.graphqlPath}`));
+app.listen({ port: PORT }, () => logger.info(`🚀 Server ready at http://localhost:${PORT}${server.graphqlPath}`));

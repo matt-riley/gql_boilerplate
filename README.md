@@ -4,15 +4,17 @@
 
 ![maintainability](https://badgen.net/codeclimate/maintainability/matt-riley/gql_boilerplate) [![CodeFactor](https://www.codefactor.io/repository/github/matt-riley/gql_boilerplate/badge)](https://www.codefactor.io/repository/github/matt-riley/gql_boilerplate) [![Known Vulnerabilities](https://snyk.io/test/github/matt-riley/gql_boilerplate/badge.svg?targetFile=package.json)](https://snyk.io/test/github/matt-riley/gql_boilerplate?targetFile=package.json) [![CircleCI](https://circleci.com/gh/matt-riley/gql_boilerplate/tree/master.svg?style=svg)](https://circleci.com/gh/matt-riley/gql_boilerplate/tree/master)
 
+[![Remix on Glitch](https://cdn.glitch.com/2703baf2-b643-4da7-ab91-7ee2a2d00b5b%2Fremix-button.svg)](https://glitch.com/edit/#!/remix/matt-riley/gql_boilerplate)
+
 The purpose of this repo is to provide me with a simple boilerplate for setting up a GraphQL service.
 
 It's 'fully featured' in so much as the correct Babel plugins, directory structure and very, very basic setup is complete.
 
 ## How to use
 
-```bash
-npx degit matt-riley/gql_boilerplate <name_of_your_directory>
-```
+Click the `Use this template` button (or [here](https://github.com/matt-riley/gql_boilerplate/generate)) and fill in all of the relevant fields.
+
+Clone your new repository.
 
 Go into the directory which contains the boilerplate:
 
@@ -49,5 +51,7 @@ The response should be:
   }
 }
 ```
+
+An example instance can be found [here](https://gql-boilerplate.glitch.me/).
 
 For more examples using this boilerplate have a look in the [GraphQL Examples](https://github.com/matt-riley/graphql_examples) repo.

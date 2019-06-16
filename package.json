@@ -1,12 +1,14 @@
 {
   "name": "gql_boilerplate",
-  "version": "2.4.2",
+  "version": "2.5.0",
   "repository": "git@github.com:matt-riley/gql_boilerplate.git",
   "author": "Matt Riley <matt@mattriley.me> (https://mattriley.me)",
   "license": "MIT",
   "scripts": {
     "build": "NODE_ENV=production babel src -d build --copy-files --no-comments && npm run update-schema",
-    "start": "nodemon --watch src -e js,graphql --exec babel-node -- src/server/index.js",
+    "start:dev": "nodemon --watch src -e js,graphql --exec babel-node -- src/server/index.js",
+    "prestart": "npm run build",
+    "start": "node build/server/index.js",
     "update-schema": "NODE_ENV=local babel-node ./scripts/build_schema.js",
     "test": "npm run lint",
     "test:only": "jest",
@@ -16,10 +18,11 @@
     "commit": "npx git-cz"
   },
   "dependencies": {
-    "apollo-datasource-rest": "0.4.0",
-    "apollo-server-express": "2.5.1",
+    "apollo-datasource-rest": "0.5.0",
+    "apollo-server-express": "2.6.3",
     "express": "4.17.1",
-    "graphql": "14.3.1"
+    "graphql": "14.3.1",
+    "winston": "3.2.1"
   },
   "devDependencies": {
     "@babel/cli": "7.4.4",

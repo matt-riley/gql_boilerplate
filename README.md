@@ -2,7 +2,7 @@
 
 ![last commit](https://badgen.net/github/last-commit/matt-riley/gql_boilerplate) ![dependencies](https://badgen.net/david/dep/matt-riley/gql_boilerplate) [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/) ![license](https://badgen.net/badge/license/MIT/blue)
 
-![maintainability](https://badgen.net/codeclimate/maintainability/matt-riley/gql_boilerplate) [![CodeFactor](https://www.codefactor.io/repository/github/matt-riley/gql_boilerplate/badge)](https://www.codefactor.io/repository/github/matt-riley/gql_boilerplate) [![Known Vulnerabilities](https://snyk.io/test/github/matt-riley/gql_boilerplate/badge.svg?targetFile=package.json)](https://snyk.io/test/github/matt-riley/gql_boilerplate?targetFile=package.json) [![CircleCI](https://circleci.com/gh/matt-riley/gql_boilerplate/tree/master.svg?style=svg)](https://circleci.com/gh/matt-riley/gql_boilerplate/tree/master)
+![maintainability](https://badgen.net/codeclimate/maintainability/matt-riley/gql_boilerplate) [![CodeFactor](https://www.codefactor.io/repository/github/matt-riley/gql_boilerplate/badge)](https://www.codefactor.io/repository/github/matt-riley/gql_boilerplate) [![codebeat badge](https://codebeat.co/badges/0a03b2ff-7f8b-4e93-aa7d-bea89336a26d)](https://codebeat.co/projects/github-com-matt-riley-gql_boilerplate-develop) [![Known Vulnerabilities](https://snyk.io/test/github/matt-riley/gql_boilerplate/badge.svg?targetFile=package.json)](https://snyk.io/test/github/matt-riley/gql_boilerplate?targetFile=package.json)
 
 [![Remix on Glitch](https://cdn.glitch.com/2703baf2-b643-4da7-ab91-7ee2a2d00b5b%2Fremix-button.svg)](https://glitch.com/edit/#!/remix/matt-riley/gql_boilerplate)
 

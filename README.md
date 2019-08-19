@@ -1,4 +1,5 @@
 ![GraphQL Boilerplate](assets/logo.png)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fmatt-riley%2Fgql_boilerplate.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fmatt-riley%2Fgql_boilerplate?ref=badge_shield)
 
 ![last commit](https://badgen.net/github/last-commit/matt-riley/gql_boilerplate) [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/) ![license](https://badgen.net/badge/license/MIT/blue)
 
@@ -57,3 +58,7 @@ The response should be:
 An example instance can be found [here](https://gql-boilerplate.glitch.me/).
 
 For more examples using this boilerplate have a look in the [GraphQL Examples](https://github.com/matt-riley/graphql_examples) repo.
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fmatt-riley%2Fgql_boilerplate.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fmatt-riley%2Fgql_boilerplate?ref=badge_large)

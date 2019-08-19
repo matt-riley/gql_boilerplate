@@ -6,6 +6,8 @@
 
 [![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=matt-riley/gql_boilerplate)](https://dependabot.com) ![dependencies](https://badgen.net/david/dep/matt-riley/gql_boilerplate) [![Known Vulnerabilities](https://snyk.io/test/github/matt-riley/gql_boilerplate/badge.svg?targetFile=package.json)](https://snyk.io/test/github/matt-riley/gql_boilerplate?targetFile=package.json)
 
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fmatt-riley%2Fgql_boilerplate.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fmatt-riley%2Fgql_boilerplate?ref=badge_large)
+
 [![Remix on Glitch](https://cdn.glitch.com/2703baf2-b643-4da7-ab91-7ee2a2d00b5b%2Fremix-button.svg)](https://glitch.com/edit/#!/remix/matt-riley/gql_boilerplate)
 
 The purpose of this repo is to provide me with a simple boilerplate for setting up a GraphQL service.

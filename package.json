@@ -21,7 +21,7 @@
     "apollo-datasource-rest": "0.6.1",
     "apollo-server-express": "2.8.2",
     "express": "4.17.1",
-    "graphql": "14.5.0",
+    "graphql": "14.5.3",
     "winston": "3.2.1"
   },
   "devDependencies": {

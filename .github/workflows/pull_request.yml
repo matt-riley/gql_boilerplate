@@ -1,13 +1,26 @@
 on: pull_request
 name: Run Tests
 jobs:
-  npmCit:
-    name: npm cit
+  runTests:
+    name: Run Tests
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node_version: [8, 10, 12, 13]
     steps:
-    - uses: actions/checkout@master
-    - name: npm cit
-      uses: actions/npm@59b64a598378f31e49cb76f27d6f3312b582f680
+    - uses: actions/checkout@v1
+    - name: npm cache
+      id: npm-cache
+      uses: actions/cache@v1
+      with: 
+        path: node_modules
+        key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+    - name: Use Node.js ${{ matrix.node_version }}
+      uses: actions/setup-node@v1
       with:
-        entrypoint: npm
-        args: cit
+        node-version: ${{ matrix.node_version }}
+    - name: Install Deps if no cache
+      if: steps.npm-cache.outputs.cache-hit != 'true'
+      run: npm ci
+    - name: Execute tests
+      run: npm run test

@@ -1,10 +1,12 @@
 ![GraphQL Boilerplate](assets/logo.png)
 
+[![Beerpay](https://beerpay.io/matt-riley/gql_boilerplate/badge.svg)](https://beerpay.io/matt-riley/gql_boilerplate)
+
 ![last commit](https://badgen.net/github/last-commit/matt-riley/gql_boilerplate) [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/) ![license](https://badgen.net/badge/license/MIT/blue)
 
 ![maintainability](https://badgen.net/codeclimate/maintainability/matt-riley/gql_boilerplate) [![CodeFactor](https://www.codefactor.io/repository/github/matt-riley/gql_boilerplate/badge)](https://www.codefactor.io/repository/github/matt-riley/gql_boilerplate) [![codebeat badge](https://codebeat.co/badges/0a03b2ff-7f8b-4e93-aa7d-bea89336a26d)](https://codebeat.co/projects/github-com-matt-riley-gql_boilerplate-develop) [![Total alerts](https://img.shields.io/lgtm/alerts/g/matt-riley/gql_boilerplate.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/matt-riley/gql_boilerplate/alerts/) [![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/matt-riley/gql_boilerplate.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/matt-riley/gql_boilerplate/context:javascript)
 
-[![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=matt-riley/gql_boilerplate)](https://dependabot.com) ![dependencies](https://badgen.net/david/dep/matt-riley/gql_boilerplate) [![Known Vulnerabilities](https://snyk.io/test/github/matt-riley/gql_boilerplate/badge.svg?targetFile=package.json)](https://snyk.io/test/github/matt-riley/gql_boilerplate?targetFile=package.json) [![Beerpay](https://beerpay.io/matt-riley/cvcsv-cli/badge.svg?style=flat-square)](https://beerpay.io/matt-riley/cvcsv-cli)
+[![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=matt-riley/gql_boilerplate)](https://dependabot.com) ![dependencies](https://badgen.net/david/dep/matt-riley/gql_boilerplate) [![Known Vulnerabilities](https://snyk.io/test/github/matt-riley/gql_boilerplate/badge.svg?targetFile=package.json)](https://snyk.io/test/github/matt-riley/gql_boilerplate?targetFile=package.json)
 
 [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fmatt-riley%2Fgql_boilerplate.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fmatt-riley%2Fgql_boilerplate?ref=badge_large) 
 

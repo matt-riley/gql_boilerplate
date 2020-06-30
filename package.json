@@ -25,7 +25,7 @@
     "express": "4.17.1",
     "graphql": "14.6.0",
     "winston": "3.3.3",
-    "snyk": "^1.348.1"
+    "snyk": "^1.352.1"
   },
   "devDependencies": {
     "@babel/cli": "7.10.1",

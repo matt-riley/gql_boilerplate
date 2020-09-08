@@ -8,3 +8,5 @@ patch:
         patched: '2020-05-13T19:11:11.448Z'
     - snyk > snyk-nodejs-lockfile-parser > @yarnpkg/core > lodash:
         patched: '2020-08-31T05:08:00.026Z'
+    - snyk > snyk-docker-plugin > snyk-nodejs-lockfile-parser > graphlib > lodash:
+        patched: '2020-09-08T05:06:53.847Z'

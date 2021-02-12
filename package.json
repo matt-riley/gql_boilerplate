@@ -30,7 +30,7 @@
   "devDependencies": {
     "@babel/cli": "7.12.13",
     "@babel/core": "7.12.13",
-    "@babel/node": "7.12.13",
+    "@babel/node": "7.12.16",
     "@babel/preset-env": "7.12.16",
     "babel-plugin-transform-builtin-extend": "1.1.2",
     "babel-plugin-transform-import-to-read-file-sync": "0.2.2",

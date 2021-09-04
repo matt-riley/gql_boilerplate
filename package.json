@@ -23,7 +23,7 @@
     "apollo-datasource-rest": "0.10.0",
     "apollo-server-express": "2.21.0",
     "express": "4.17.1",
-    "graphql": "15.5.0",
+    "graphql": "15.5.2",
     "winston": "3.3.3",
     "snyk": "^1.518.0"
   },
@@ -35,7 +35,7 @@
     "babel-plugin-transform-builtin-extend": "1.1.2",
     "babel-plugin-transform-import-to-read-file-sync": "0.2.2",
     "babel-preset-minify": "0.5.1",
-    "commitizen": "4.2.3",
+    "commitizen": "4.2.4",
     "cz-conventional-changelog": "3.3.0",
     "eslint": "7.21.0",
     "eslint-config-airbnb-base": "14.2.1",

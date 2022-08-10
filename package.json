@@ -34,7 +34,7 @@
     "@babel/preset-env": "7.18.10",
     "babel-plugin-transform-builtin-extend": "1.1.2",
     "babel-plugin-transform-import-to-read-file-sync": "0.2.2",
-    "babel-preset-minify": "0.5.1",
+    "babel-preset-minify": "0.5.2",
     "commitizen": "4.2.4",
     "cz-conventional-changelog": "3.3.0",
     "eslint": "8.23.0",

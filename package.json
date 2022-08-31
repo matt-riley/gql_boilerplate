@@ -24,7 +24,7 @@
     "apollo-server-express": "3.10.2",
     "express": "4.18.1",
     "graphql": "16.6.0",
-    "winston": "3.7.2",
+    "winston": "3.8.1",
     "snyk": "^1.994.0"
   },
   "devDependencies": {

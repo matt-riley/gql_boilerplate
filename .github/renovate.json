@@ -1,0 +1,61 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["config:base"],
+  "labels": ["dependencies"],
+  "automergeStrategy": "rebase",
+  "packageRules": [
+    {
+      "matchDepTypes": ["devDependencies"],
+      "automerge": true
+    },
+    {
+      "matchUpdateTypes": ["minor", "patch"],
+      "automerge": true
+    },
+    {
+      "matchPackagePatterns": ["^eslint", "^prettier", "^@typescript-eslint"],
+      "labels": ["linting", "dependencies"],
+      "groupName": "linting"
+    },
+    {
+      "matchPackagePatterns": ["^astro", "^@astrojs"],
+      "labels": ["astro", "dependencies"],
+      "groupName": "astro"
+    },
+    {
+      "matchPackagePatterns": ["babel"],
+      "labels": ["babel", "dependencies"],
+      "groupName": "babel"
+    },
+    {
+      "matchPackagePatterns": ["^@types", "^typescript"],
+      "labels": ["typescript", "dependencies"],
+      "groupName": "typescript"
+    },
+    {
+      "matchPackagePatterns": [
+        "^commitizen",
+        "^cz-conventional-changelog",
+        "^standard-version"
+      ],
+      "labels": ["conventional-commits", "dependencies"],
+      "groupName": "conventional-commits"
+    },
+    {
+      "matchPackagePatterns": ["^graphql", "^apollo"],
+      "labels": ["graphql", "dependencies"],
+      "groupName": "graphql"
+    },
+    {
+      "matchPackageNames": [
+        "cssnano",
+        "sass",
+        "autoprefixer",
+        "tailwindcss",
+        "@catppuccin/tailwindcss"
+      ],
+      "labels": ["css", "dependencies"],
+      "groupName": "css"
+    }
+  ]
+}

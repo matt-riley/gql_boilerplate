@@ -1,5 +1,0 @@
-isGraphQL: true
-schemaCheck:
-  paths:
-    - path: schema.graphql
-      mainBranch: master
